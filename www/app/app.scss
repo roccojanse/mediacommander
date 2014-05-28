@@ -43,12 +43,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  @include font-size(2.6rem);
+  @include font-size(2.2rem);
 }
 
-@import "home/home";
+a {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.top-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.page {
+  position: relative;
+  width: 100%;
+  padding: 84px 10px 50px 10px;
+}
+
+@import "components/header/header";
+@import "components/navigation/navigation";
+@import "dashboard/dashboard";
 @import "music/music";
 @import "music/spotify/spotify";
 @import "music/spotify/playlist/playlist";
+@import "components/footer/footer";
 
 @import "sass/mixins/clearfix";

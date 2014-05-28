@@ -183,7 +183,7 @@ module.exports = function(grunt) {
     grunt.registerTask('force-off', 'turning forced off', function() { grunt.option('force', true); });
 
     // main tasks
-    grunt.registerTask('development', ['clear', 'sass:dev', 'force-on', 'jshint', 'uglify:prep', 'force-off', 'svgmin:dev', 'notify']);
+    grunt.registerTask('development', ['clear', 'sass:dev', 'force-on', 'jshint', 'uglify:prep', 'force-off', 'notify']);
     //grunt.registerTask('production', ['compile-sass-prod', 'compile-js-prod', 'optimise-images-prod']);
 
     // command line tasks

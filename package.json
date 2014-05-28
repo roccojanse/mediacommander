@@ -1,6 +1,6 @@
 {
   "name": "mediacommander",
-  "version": "0.5.0-32",
+  "version": "0.7.2-0",
   "description": "Home media management server",
   "main": "www/index.html",
   "dependencies": {

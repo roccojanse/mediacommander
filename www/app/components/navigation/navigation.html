@@ -1,0 +1,7 @@
+<div class="navigation">
+    <ul>
+        <li ng-repeat="item in items">
+            <a ng-click="/#{{item.path}}" ng-href="/#{{item.path}}" class="{{item.class}}" ng-class="{active: isActive(item)}" title="{{item.title}}"></a>
+        </li>
+    </ul>
+</div>

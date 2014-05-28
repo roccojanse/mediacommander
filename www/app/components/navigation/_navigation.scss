@@ -1,0 +1,57 @@
+.navigation {
+    position: relative;
+    width: 100%;
+    //padding: .2em .5em .1em .5em;
+    background-color: rgba(0, 0, 0, .6);
+    height: 44px;
+    z-index: 8;
+
+    ul {
+        position: relative;
+        list-style-type: none;
+        width: 100%;
+        height: 100%;
+
+        li {
+            position: relative;
+            display: block;
+            float: left;
+            width: 20%;
+            height: 100%;
+        }
+    }
+
+    a {
+        display: block;
+        float: left;
+        width: 100%;
+        height: 100%;
+        border-bottom: 3px solid transparent;
+        text-decoration: none;
+        @include transition(all 200ms ease-out);
+
+        &:active, &.active {
+            border-bottom: 3px solid $green;
+        }  
+
+        &.logo {
+            background: transparent url(/app/assets/svg/logo.svg) no-repeat center center;       
+        }
+
+        &.movies {
+            background: transparent url(/app/assets/svg/movies.svg) no-repeat center center;       
+        }
+
+        &.series {
+            background: transparent url(/app/assets/svg/series.svg) no-repeat center center;       
+        }
+
+        &.pictures {
+            background: transparent url(/app/assets/svg/pictures.svg) no-repeat center center;       
+        }
+
+        &.music {
+            background: transparent url(/app/assets/svg/music.svg) no-repeat center center;       
+        }
+    }
+}
