@@ -1,0 +1,13 @@
+
+@mixin background-striped($bg:#000, $first:#101010, $second:transparent, $deg:-45deg, $bgsize:100px) {
+    background-color: $bg;
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0.25, $first), color-stop(0.25, $second), color-stop(0.5, $second), color-stop(0.5, $first), color-stop(0.75, $first), color-stop(0.75, $second), to($second));
+    background-image: -webkit-linear-gradient($deg, $first 25%, $second 25%, $second 50%, $first 50%, $first 75%, $second 75%, $second);
+    background-image: -moz-linear-gradient($deg, $first 25%, $second 25%, $second 50%, $first 50%, $first 75%, $second 75%, $second);
+    background-image: -ms-linear-gradient($deg, $first 25%, $second 25%, $second 50%, $first 50%, $first 75%, $second 75%, $second);
+    background-image: -o-linear-gradient($deg, $first 25%, $second 25%, $second 50%, $first 50%, $first 75%, $second 75%, $second);
+    background-image: linear-gradient($deg, $first 25%, $second 25%, $second 50%, $first 50%, $first 75%, $second 75%, $second);
+    -webkit-background-size: $bgsize $bgsize;
+    -moz-background-size: $bgsize $bgsize;
+    background-size: $bgsize $bgsize;
+}

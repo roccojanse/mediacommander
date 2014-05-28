@@ -1,0 +1,54 @@
+@import "sass/globals";
+@import "sass/functions/utils";
+@import "sass/mixins/crossbrowser";
+@import "sass/mixins/backgrounds";
+@import "sass/mixins/animations";
+@import "sass/mixins/retina";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  word-break: break-word;
+  @include box-sizing(border-box);
+}
+*:focus {
+  outline: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  @include font-smoothing(antialiased);
+  text-rendering: optimizedLegibility;
+  -webkit-text-size-adjust: none;
+}
+
+body {
+  position: relative;
+  font-family: $font-main;
+  @include font-size(2.6rem);
+  line-height: 1.2;
+  @include background-striped(#000, #101010, transparent, -45deg, 100px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-headings;
+  font-weight: 500;
+  color: $green;
+}
+
+h1 {
+  @include font-size(2.6rem);
+}
+
+@import "home/home";
+@import "music/music";
+@import "music/spotify/spotify";
+@import "music/spotify/playlist/playlist";
+
+@import "sass/mixins/clearfix";

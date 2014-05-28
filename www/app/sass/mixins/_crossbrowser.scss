@@ -1,0 +1,32 @@
+
+@mixin box-sizing($param:border-box) {
+    -moz-box-sizing: $param;
+    box-sizing: $param;
+}
+
+@mixin box-shadow($param) {
+    -webkit-box-shadow: $param;
+    -moz-box-shadow: $param;
+    box-shadow: $param;   
+}
+
+@mixin font-smoothing($param:antialiased) {
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+@mixin border-radius($param) {
+    -webkit-border-radius: $param;
+    -moz-border-radius: $param;
+    border-radius: $param;
+}
+
+@mixin font-size($size) {
+    font-size: (strip-units($size) * 10) * 1px;
+    font-size: $size;
+}
+
+@mixin background-size($param) {
+    -webkit-background-size: $param;
+    background-size: $param;
+}

@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  word-break: break-word;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizedLegibility;
+  -webkit-text-size-adjust: none;
+}
+
+body {
+  position: relative;
+  font-family: gesta, arial, helvetica, sans-serif;
+  font-size: 26px;
+  font-size: 2.6rem;
+  line-height: 1.2;
+  background-color: black;
+  background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0.25, #101010), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, #101010), color-stop(0.75, #101010), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(-45deg, #101010 25%, transparent 25%, transparent 50%, #101010 50%, #101010 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(-45deg, #101010 25%, transparent 25%, transparent 50%, #101010 50%, #101010 75%, transparent 75%, transparent);
+  background-image: -ms-linear-gradient(-45deg, #101010 25%, transparent 25%, transparent 50%, #101010 50%, #101010 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(-45deg, #101010 25%, transparent 25%, transparent 50%, #101010 50%, #101010 75%, transparent 75%, transparent);
+  background-image: linear-gradient(-45deg, #101010 25%, transparent 25%, transparent 50%, #101010 50%, #101010 75%, transparent 75%, transparent);
+  -webkit-background-size: 100px 100px;
+  -moz-background-size: 100px 100px;
+  background-size: 100px 100px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: futura-pt, arial, helvetica, sans-serif;
+  font-weight: 500;
+  color: #50df29;
+}
+
+h1 {
+  font-size: 26px;
+  font-size: 2.6rem;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+/*# sourceMappingURL=mediacommander.css.map */
